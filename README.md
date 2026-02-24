@@ -1,3 +1,40 @@
+# 🌤️ Weather Forecast App
+
+A modern React-based Weather Forecast application that fetches real-time weather data using an external Weather API.
+
+## 🌐 Live Demo
+
+👉 **Live Site:https://weather-forecast787.netlify.app/ 
+---
+
+## 🚀 Features
+
+- 📍 Detects user's current location
+- 🔎 Search weather by city name
+- 🌡️ Displays temperature in Celsius
+- 🌤️ Dynamic weather icons
+- ⚡ Fast and responsive UI
+- 🌍 Deployed on Netlify
+
+---
+
+## 🛠️ Tech Stack
+
+- React.js (Create React App)
+- Context API
+- OpenWeather API (or your API name)
+- CSS
+- Netlify (Deployment)
+- Git & GitHub
+
+---
+
+## 📦 Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Ishant713/weather-forecast-app.git
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
