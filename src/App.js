@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
+import Input from './Components/Input';
+import { Button } from './Components/Button';
+import { Card } from './Components/Card';
 
+
+import { useWeather } from './context/Weather';
 function App() {
+  const Weather =useWeather();
+
+  useEffect(()=>{
+    Weather.fetchCurrentUserLocationData()
+  },[Weather])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Weather Forecast</h1>
+      <Input/>
+      <Button className="search-box" onClick={Weather.fetchData} value="Search"/>
+      <Card/>
+      {/* <Button value="Referesh"/> */}
+
+
+
     </div>
   );
 }
