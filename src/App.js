@@ -9,9 +9,13 @@ import { useWeather } from './context/Weather';
 function App() {
   const Weather =useWeather();
 
-  useEffect(()=>{
-    Weather.fetchCurrentUserLocationData()
-  },[])
+ useEffect(() => {
+  const fetchData = async () => {
+    await Weather.fetchCurrentUserLocationData();
+  };
+  
+  fetchData();
+}, []);
 
 
   return (
