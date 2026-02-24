@@ -11,7 +11,7 @@ function App() {
 
   useEffect(()=>{
     Weather.fetchCurrentUserLocationData()
-  },[Weather])
+  },[])
 
 
   return (
