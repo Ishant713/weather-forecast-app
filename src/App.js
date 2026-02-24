@@ -8,10 +8,11 @@ import { useWeather } from './context/Weather';
 function App() {
 
   const { fetchCurrentUserLocationData, fetchData } = useWeather();
-
+  
   useEffect(() => {
-    fetchCurrentUserLocationData();
-  }, [fetchCurrentUserLocationData]);
+  fetchCurrentUserLocationData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
 
   return (
     <div className="App">
